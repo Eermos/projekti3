@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+
+</head>
+<body>
+    <h1>Rekisteröitymislomake</h1>
+    <table>
+        <tr>
+            <th>Käyttäjä ID:</th>
+            <th><form name="login">
+                <input type="text" id="kID" minlength="6">
+            </form></th>
+        </tr>
+        <tr>
+            <th>Salasana:</th>
+            <th>
+                <form name="login">
+                    <input type="text" id="pasID">
+                </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Nimi:</th>
+            <th>
+                <form name="login">
+                    <input type="text" id="namID">
+                </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Osoite:</th>
+            <th>
+                <form name="login">
+                    <input type="text" id="addID" name="osote">
+                </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Maa:</th>
+            <th>
+                <form name="login">
+                    <select class="form-control" name="maat" id="maita">
+                        <option id="luvaton" value="alku">(Valitse maa)</option>
+                      <option value="Suomi">Suomi</option>
+                      <option value="Ruotsi">Ruotsi</option>
+                      <option value="Norja">Norja</option>
+                      <option value="Tanska">Tanska</option>
+                      <option value="muu">Joku muu</option>
+                    </select>
+                  </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Postinumero:</th>
+            <th>
+                <form name="login">
+                    <input type="text" id="poID" maxlength="5">
+                </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Sähköposti:</th>
+            <th>
+                <form name="login">
+                    <input type="text" id="spost" >
+                </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Sukupuoli:</th>
+            <th>
+                <form name="suku" id="sukupuu">
+                    <input type="radio" id="sex1" name="man" value="male">
+                    <label for="sex">Mies</label> 
+                    <input type="radio" id="sex2" name="man" value="woman">
+                    <label for="sex">Nainen</label> <br>
+                </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Kieli:</th>
+            <th>
+                <form name="login">
+                    <input type="checkbox" id="suomikiel" name="kieli" value="suom">
+                    <label for="suomikiel">Suomi</label>
+                    <input type="checkbox" id="muukiel" name="kieli" value="muukiel">
+                    <label for="muukiel">Muu kuin suomi</label>
+                </form>
+            </th>
+        </tr>
+        <tr>
+            <th>Lisätietoja:</th>
+            <th>
+                <form name="login">
+                    <textarea name="infoa" id="info" cols="50" rows="10"></textarea>
+                    
+                </form>
+            </th>
+        </tr>
+        <tr>
+            <th>
+
+            </th>
+            <th>
+             
+            </th>
+        </tr>
+           
+    </table>
+    <form name="formvalue">
+        <input type="submit" value="Lähetä" id="btn">
+    </form>
+    <script src="index.js"></script>
+</body>
